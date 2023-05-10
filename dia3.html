@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">	
+	<link rel="stylesheet" href="./styles/reset.css">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+	<link rel="stylesheet" href="./styles/style3.css">
+	<title>WSR23</title>
+</head>
+
+<body>
+	<header>	
+		<nav class="navbar-fixed">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">WSR23</a>
+				<a href="#" data-activates="menu-mobile" class="button-collapse">
+					<i class="material-icons">menu</i>
+				</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="./index.html">início</a></li>					
+					<li><a href="./dia1.html">dia 1</a></li>
+					<li><a href="./dia2.html">dia 2</a></li>
+					<li><a href="./dia3.html">dia 3</a></li>
+					<li><a href="./dia4.html">dia 4</a></li>
+					<li><a href="./atencao.html">atenção!</a></li>
+				</ul>
+				<ul class="side-nav" id="menu-mobile">
+					<li><a href="./index.html">início</a></li>
+					<li><a href="./dia1.html">dia 1</a></li>
+					<li><a href="./dia2.html">dia 2</a></li>
+					<li><a href="./dia3.html">dia 3</a></li>
+					<li><a href="./dia4.html">dia 4</a></li>
+					<li><a href="./atencao.html">atenção!</a></li>
+				</ul>
+			</div>
+		</nav>		
+	</header>
+		
+		<section class="parallax-section">
+			<div class="parallax-image"></div>
+				<div class="parallax-text">
+					<h1>OnlyFans, IA e segurança de dados, como assim?</h1>
+					<p>A agenda do terceiro dia pareceu bem diversificada, com segurança humana para conteúdo adulto, IA e segurança de dados e de autenticação.
+					</p>
+				</div>
+		</section>		
+		
+		<section class="banner-rws">
+			<!-- <h2 class="banner__titulo-rws"></h2> -->
+			<p class="banner__texto">
+				<strong>Amrapali Gan</strong>, presidente do OnlyFans, falou que a empresa está em um momento animador e que a Latam é um região muito importante e de crescimento. O modelo de negócio é 80/20, ou seja, os criadores de conteúdo da plataforma ficam com 80% do valor recebido. A presidente informou que o ambiente é muito seguro, os processos são rígidos e controlados por humanos, sendo que a segurança é o coração do negócio, pois observam tudo o que acontece...<br><br>
+				<strong>Brittany Kaiser</strong>, fundadora do Own Yor Data, falou junto com <strong>Jeff Shiner</strong>, CEO da 1Passord. Ela enfatizou a importância de conhecer os direitos sobre nossos dados, entender o sistema para nossa proteção, e para que assim tenhamos base para efetuar denúncias. Em ralação a tecnologia 'passkey' (chave de acesso) será um recurso de segurança importante, pois substituiu a digitação de dados passíveis de captura, tornando o processo de autenticação e acesso mais robusto, inclusive contra engenharia social, já que o atacante não terá informação para transportar. Para ambos a segurança ainda é deixada em segundo plano por muitas empresas e que continuarão a não levar o assunto a sério até que sofram consequências.<br><br>
+				<strong>Matias Woloski</strong>, CTO , junto com <strong>Damian Schenkelman</strong>, arquiteto, ambos na Auth0, também falaram sobre como recursos de autenticação sem senha são indispensáveis para prover segurança e mitigar golpes, pois são resistentes a phishing, com uma boa experiêcia e preservam a privacidade.<br><br>
+
+			</p>	
+		</section>
+	
+		<!-- <section id="days" class="banner"> -->
+			<!-- <h2 class="banner__titulo">E a Rio Web Summit 2023?</h2> -->
+			<!-- <p class="banner__texto">Saiba mais sobre o que muitos estão fazendo para construir nosso futuro, e siga pronto para as novas mudanças!</p> -->
+		<!-- </section> -->
+	
+	<footer>
+		<div class="rodape">
+			<p>Ação colaborativa sem vínculo.</p>
+		</div>
+]	</footer>
+	
+	<div class="whats">
+		<a class="whats__img" href="https://wa.me/5561981211905?text=Olá! Como estão hoje?" target="_blank" rel="noopener noreferer">
+		<img src="./img/whats_icon.svg" class="whats__img" alt="Fale com a gente pelo Whatsapp" title="Fale com a gente pelo Whatsapp">
+		</a>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script>
+	  var scene = document.querySelector('.parallax-section');
+	  var parallaxInstance = new Parallax(scene);
+	</script>	
+	<script>
+		$(function(){
+			$(".button-collapse").sideNav();
+		});	
+	</script>
+	<script>
+		$(window).scroll(function() {    
+			var scroll = $(window).scrollTop();
+			if (scroll >= 50) {
+				$("nav.navbar-fixed").addClass("scrolled");
+			} else {
+				$("nav.navbar-fixed").removeClass("scrolled");
+			}
+		});
+	</script>
+	<script>
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			$('.parallax-image').css('transform', 'translate(-50%, ' + (scroll/4) + 'px)');
+		});
+	</script>
+</body>
